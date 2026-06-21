@@ -1,19 +1,22 @@
 # AI Code Review Assistant
 
-AI Code Review Assistant is a web application that automatically analyzes source code and GitHub repositories to identify bugs, security vulnerabilities, performance issues, and code quality concerns.
+AI Code Review Assistant is a full-stack application that automates the code review process using Large Language Models and static analysis tools.
 
-The project combines static analysis tools with Large Language Models to generate actionable code review feedback in a structured and developer-friendly format.
+The platform analyzes source code and GitHub repositories to identify bugs, security vulnerabilities, performance bottlenecks, code quality issues, and maintainability concerns. It combines AI-generated insights with traditional static analysis to provide structured, actionable feedback for developers.
 
-## Features
+## Key Features
 
-* AI-powered code reviews using Gemini
+* AI-powered code review using Gemini
 * GitHub repository analysis
-* Pylint integration for code quality checks
+* Automated bug and logical issue detection
+* Security vulnerability assessment
+* Performance optimization recommendations
+* Code quality and maintainability review
+* Pylint integration for static code analysis
 * Bandit integration for security scanning
-* Performance and optimization suggestions
-* Production-ready code recommendations
-* REST API built with FastAPI
-* Interactive web interface
+* Repository-level review and summary generation
+* Interactive web-based user interface
+* REST APIs with FastAPI
 * Swagger API documentation
 
 ## Tech Stack
@@ -24,7 +27,7 @@ The project combines static analysis tools with Large Language Models to generat
 * FastAPI
 * LangChain
 
-**AI**
+**AI & Automation**
 
 * Google Gemini API
 
@@ -33,7 +36,7 @@ The project combines static analysis tools with Large Language Models to generat
 * Pylint
 * Bandit
 
-**Repository Analysis**
+**Repository Processing**
 
 * GitPython
 
@@ -43,97 +46,23 @@ The project combines static analysis tools with Large Language Models to generat
 * CSS
 * JavaScript
 
-## Project Structure
+## Highlights
 
-```text
-app/
-├── main.py
-├── reviewer.py
-├── github_review.py
-├── repository_reviewer.py
-├── prompts.py
-└── models.py
+* Developed an AI-assisted review engine capable of analyzing both individual source files and complete GitHub repositories.
+* Integrated security scanning and code-quality assessment into a unified review workflow.
+* Implemented structured review reports covering bugs, security issues, performance concerns, best practices, and optimized code suggestions.
+* Built a responsive web interface for real-time code and repository reviews.
 
-static/
-templates/
+## Future Enhancements
 
-requirements.txt
-README.md
-```
-
-## Getting Started
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/Mrunal-creates/ai-code-review-assistant.git
-cd ai-code-review-assistant
-```
-
-### Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### Activate Environment
-
-Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Configure Environment Variables
-
-Create a `.env` file:
-
-```env
-GOOGLE_API_KEY=your_api_key
-```
-
-### Run the Application
-
-```bash
-uvicorn app.main:app --reload
-```
-
-Open:
-
-```text
-http://127.0.0.1:8000
-```
-
-API Documentation:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
-## Example Capabilities
-
-* Detect hardcoded credentials
-* Identify SQL injection risks
-* Review repository-level code quality
-* Suggest performance improvements
-* Recommend secure coding practices
-* Generate optimized code versions
-
-## Future Improvements
-
-* User authentication
-* Review history tracking
-* PDF report export
+* Authentication and user management
+* Review history and analytics
+* PDF export for review reports
 * CI/CD integration
-* Multi-LLM support
+* Multi-model AI support
 
 ## Author
 
-Mrunal Parashar
+**Mrunal Parashar**
+
 
