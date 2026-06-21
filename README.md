@@ -61,6 +61,12 @@ The platform analyzes source code and GitHub repositories to identify bugs, secu
 * CI/CD integration
 * Multi-model AI support
 
+
+<img width="1912" height="973" alt="image" src="https://github.com/user-attachments/assets/e292dd0e-516a-4bf2-bc23-5c69cc6bec20" />
+
+<img width="1911" height="312" alt="image" src="https://github.com/user-attachments/assets/adfec90c-17ba-4adb-80c6-307f5c74445f" />
+
+
 ## Author
 
 **Mrunal Parashar**
