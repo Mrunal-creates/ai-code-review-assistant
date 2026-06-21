@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Review Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚀 AI Code Review Assistant</h1>
+
+        <p class="subtitle">
+            Review code snippets or entire GitHub repositories using AI,
+            Pylint, and Bandit.
+        </p>
+
+        <div class="card">
+
+            <h2>Code Review</h2>
+
+            <select id="language">
+
+                <option value="python">Python</option>
+
+                <option value="java">Java</option>
+
+                <option value="javascript">JavaScript</option>
+
+                <option value="cpp">C++</option>
+
+            </select>
+
+            <textarea
+                id="code"
+                placeholder="Paste your code here..."
+            ></textarea>
+
+            <button onclick="reviewCode()">
+                Review Code
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>GitHub Repository Review</h2>
+
+            <input
+                type="text"
+                id="repo_url"
+                placeholder="https://github.com/user/repository"
+            >
+
+            <button onclick="reviewRepository()">
+                Review Repository
+            </button>
+
+        </div>
+
+        <div id="loading">
+
+            <div class="spinner"></div>
+
+            <p>Analyzing...</p>
+
+        </div>
+
+        <div class="card result-card">
+
+            <h2>Review Result</h2>
+
+            <pre id="result"></pre>
+
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+langchain-google-genai
+python-dotenv
+pydantic
+jinja2
+python-multipart
+pylint
+bandit
+GitPython
